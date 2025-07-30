@@ -1,12 +1,12 @@
 # Text_Analytics
 ## Web Scraping, SQL Insights, and Data Visualization
-📌 Overview
+## 📌 Overview
 This project demonstrates the end-to-end process of extracting meaningful insights from a website using web scraping, performing SQL-based data exploration, and visualizing insights using Python-based Exploratory Data Analysis (EDA).
 
 We use the publicly available website Quotes to Scrape to extract quotes, authors, and associated tags. The data is stored in a structured CSV format, queried using SQL, and analyzed using Pandas, Matplotlib, and Seaborn.
 
-How to Run the Project:
-🛠️ Part 1: Web Scraping (Using Python)
+# How to Run the Project:
+## 🛠️ Part 1: Web Scraping (Using Python)
 
 Run web_scraper.py to scrape data.
 
@@ -23,7 +23,7 @@ author, quote, tag_name
 
 📄 File: web_scraper.py
 
-🧮 Part 2: SQL Insights
+## 🧮 Part 2: SQL Insights
 Once the data was scraped, we established a connection between Jupyter Notebook and MySQL Workbench to store the data directly into the SQL database. Run the code in —file to establish a connection and run SQL queries.
 
 The following insights were derived:
@@ -38,12 +38,12 @@ Longest quote and its author
 The longest quote in the dataset is by Marilyn Monroe, with 1084 characters, emphasizing life's unpredictability and the importance of owning your choices.
 📄 File: sql_analysis.sql (queries for detailed analysis)
 
-📊 Part 3: Exploratory Data Analysis (EDA)
+## 📊 Part 3: Exploratory Data Analysis (EDA)
 Performed using Pandas, Matplotlib, and Seaborn.
 
 Run analysis.ipynb to analyze data distribution.
 
-Basic EDA:
+### Basic EDA:
 
 Dataset shape and column info
 Count of missing values
@@ -57,7 +57,7 @@ Word Cloud: Most Frequent Words in Quotes
 KDE Plot: Distribution of Quote Lengths
 KDE Plot Insights (Statistical Analysis)
 
-Statistical Summary:
+### Statistical Summary:
 
 Mean: 133.74
 Median: 90.0
@@ -72,8 +72,7 @@ Mean > Median, which confirms the effect of skewness.
 The median remains a more reliable central measure due to its resistance to outliers.
 📄 File: analysis.ipynb (Detailed insights with visuals and stats.)
 
-📁 Project Structure
-Build-Week-Project-2/
+# 📁 Project Structure
 
 ├── web_scraper.py # Scraping logic
 
@@ -81,18 +80,18 @@ Build-Week-Project-2/
 
 ├── sql_analysis.sql # SQL-based insights
 
-├── analysis.ipynb # Pandas + Visualizations
+├──Text_Analysis.ipynb # Pandas + Visualizations
 
 ├── python_sql.ipynb # Jupyter Notebook to SQL connection.
 
 └── README.md # Project documentation
 
-🔧 Setup Instructions
+## 🔧 Setup Instructions
 Clone the repository: git clone https://github.com/yourusername/quotes-analysis.git cd quotes-analysis
 Install dependencies: pip install -r requirements.txt
 Run scraper: python web_scraper.py
 Explore with Jupyter Notebook: jupyter notebook analysis.ipynb
-📌 Dependencies
+### 📌 Dependencies
 Python 3.x
 BeautifulSoup4
 Requests

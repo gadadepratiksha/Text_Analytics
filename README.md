@@ -8,7 +8,7 @@ We use the publicly available website Quotes to Scrape to extract quotes, author
 # How to Run the Project:
 ## 🛠️ Part 1: Web Scraping (Using Python)
 
-Run web_scraper.py to scrape data.
+Run web_scrapper.py to scrape data.
 
 We scraped the following information from all pages of the website:
 

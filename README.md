@@ -3,7 +3,7 @@
 ## 📌 Overview
 This project demonstrates the end-to-end process of extracting meaningful insights from a website using web scraping, performing SQL-based data exploration, and visualizing insights using Python-based Exploratory Data Analysis (EDA).
 
-We use the publicly available website Quotes to Scrape to extract quotes, authors, and associated tags. The data is stored in a structured CSV format, queried using SQL, and analyzed using Pandas, Matplotlib, and Seaborn.
+We use the publicly available website [Quotes to Scrape] to extract quotes, authors, and associated tags. The data is stored in a structured CSV format, queried using SQL, and analyzed using Pandas, Matplotlib, and Seaborn.
 
 ## How to Run the Project:
 ### 🛠️ Part 1: Web Scraping (Using Python)
@@ -91,7 +91,7 @@ Run analysis.ipynb to analyze data distribution.
 
 ## 🔧 Setup Instructions
 1.Clone the repository: git clone 
-https: //github.com/yourusername/quotes-analysis.git cd quotes-analysis
+https://github.com/yourusername/quotes-analysis.git cd quotes-analysis
 2.Install dependencies: pip install -r requirements.txt
 3.Run scraper: python web_scraper.py
 4.Explore with Jupyter Notebook: jupyter notebook analysis.ipynb

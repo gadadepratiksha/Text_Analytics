@@ -5,8 +5,8 @@ This project demonstrates the end-to-end process of extracting meaningful insigh
 
 We use the publicly available website Quotes to Scrape to extract quotes, authors, and associated tags. The data is stored in a structured CSV format, queried using SQL, and analyzed using Pandas, Matplotlib, and Seaborn.
 
-# How to Run the Project:
-## 🛠️ Part 1: Web Scraping (Using Python)
+## How to Run the Project:
+### 🛠️ Part 1: Web Scraping (Using Python)
 
 Run web_scrapper.ipynb to scrape data.
 
@@ -23,18 +23,18 @@ author, quote, tag_name
 
 📄 File: web_scraper.py
 
-## 🧮 Part 2: SQL Insights
+### 🧮 Part 2: SQL Insights
 Once the data was scraped, we established a connection between Jupyter Notebook and MySQL Workbench to store the data directly into the SQL database. Run the code in —file to establish a connection and run SQL queries.
 
 The following insights were derived:
 
-Number of quotes by each author
+#### 1.Number of quotes by each author
 Albert Einstein is the most quoted author with 10 quotes, followed by J.K. Rowling with 9, followed by authors like Marilyn Monroe (7), Dr. Seuss and Mark Twain (6), C.S. Lewis and Jane Austen (5), while most others have 1–2 quotes each.
-Top 5 most common tags
+#### 2.Top 5 most common tags
 The top 5 most common tags are love, inspirational, life, humor, and books, with love leading at 14 occurrences.
-Authors with more than 5 quotes
+#### 3.Authors with more than 5 quotes
 Only five authors have more than 5 quotes: Albert Einstein, J.K. Rowling, Marilyn Monroe, Mark Twain, and Dr. Seuss, with Einstein topping the list at 10 quotes.
-Longest quote and its author
+#### 4.Longest quote and its author
 The longest quote in the dataset is by Marilyn Monroe, with 1084 characters, emphasizing life's unpredictability and the importance of owning your choices.
 📄 File: sql_analysis.sql (queries for detailed analysis)
 
@@ -45,34 +45,37 @@ Run analysis.ipynb to analyze data distribution.
 
 ### Basic EDA:
 
-Dataset shape and column info
-Count of missing values
-Unique authors and tag distribution
-Quote length calculation added as a new column: length_of_quote
-Data Visualizations:
+- Dataset shape and column info
+- Count of missing values
+- Unique authors and tag distribution
+- Quote length calculation added as a new column: length_of_quote
 
-Bar Chart: Top 10 Most Quoted Authors
-Pie Chart: Proportion of Top 5 Tags
-Word Cloud: Most Frequent Words in Quotes
-KDE Plot: Distribution of Quote Lengths
-KDE Plot Insights (Statistical Analysis)
+#### Data Visualizations:
 
-### Statistical Summary:
+1.Bar Chart: Top 10 Most Quoted Authors
+2.Pie Chart: Proportion of Top 5 Tags
+3.Word Cloud: Most Frequent Words in Quotes
+4.KDE Plot: Distribution of Quote Lengths
 
-Mean: 133.74
-Median: 90.0
-Standard Deviation: 172.18
-Skewness: 4.60 (Highly Right Skewed)
-Kurtosis: 22.36 (Leptokurtic - heavy-tailed distribution)
-Interpretation:
+#### KDE Plot Insights (Statistical Analysis)
 
-The KDE plot is leptokurtic, meaning the distribution has a sharp peak with heavy tails.
-It is positively skewed (right-skewed), indicating that a small number of very long quotes are pulling the mean higher.
-Mean > Median, which confirms the effect of skewness.
-The median remains a more reliable central measure due to its resistance to outliers.
+#### Statistical Summary:
+
+- Mean: 133.74
+- Median: 90.0
+- Standard Deviation: 172.18
+- Skewness: 4.60 (Highly Right Skewed)
+- Kurtosis: 22.36 (Leptokurtic - heavy-tailed distribution)
+
+#### Interpretation:
+
+- The KDE plot is **leptokurtic**, meaning the distribution has a sharp peak with heavy tails.
+- It is **positively skewed (right-skewed)**, indicating that a small number of very long quotes are pulling the mean higher.
+- **Mean > Median**, which confirms the effect of skewness.
+- The **median** remains a more reliable central measure due to its resistance to outliers.
 📄 File: analysis.ipynb (Detailed insights with visuals and stats.)
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ├── web_scraper.py # Scraping logic
 
@@ -87,16 +90,18 @@ The median remains a more reliable central measure due to its resistance to outl
 └── README.md # Project documentation
 
 ## 🔧 Setup Instructions
-Clone the repository: git clone https://github.com/yourusername/quotes-analysis.git cd quotes-analysis
-Install dependencies: pip install -r requirements.txt
-Run scraper: python web_scraper.py
-Explore with Jupyter Notebook: jupyter notebook analysis.ipynb
-### 📌 Dependencies
-Python 3.x
-BeautifulSoup4
-Requests
-Pandas
-Matplotlib
-Seaborn
-WordCloud
-SQLite (or any SQL engine)
+1.Clone the repository: git clone 
+https://github.com/yourusername/quotes-analysis.git cd quotes-analysis
+2.Install dependencies: pip install -r requirements.txt
+3.Run scraper: python web_scraper.py
+4.Explore with Jupyter Notebook: jupyter notebook analysis.ipynb
+
+## 📌 Dependencies
+- Python 3.x
+- BeautifulSoup4
+- Requests
+- Pandas
+- Matplotlib
+- Seaborn
+- WordCloud
+- SQLite (or any SQL engine)
